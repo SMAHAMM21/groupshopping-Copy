@@ -54,7 +54,7 @@ function outputMessage(message) {
   div.classList.add('message');
   if(username == message.username){
     div.classList.add('sender');
-  }elseif(message.username == "Group Shopping"){
+  }else if(message.username == "Group Shopping"){
     div.classList.add('notification');
   }else{
     div.classList.add('reciever');
