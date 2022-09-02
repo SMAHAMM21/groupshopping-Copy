@@ -116,8 +116,11 @@ a {
 }
 
 .chat-messages .message.notification {
-	background-color: var(--light-color);
-	margin: 0 4px 10px;
+	background-color: #000;
+	display: table;
+	margin: 0 auto 10px;
+	max-width: 60%;
+	text-align: center;
 }
 
 .chat-messages .message.sender {
@@ -139,7 +142,7 @@ a {
 }
 
 .chat-messages .message.reciever {
-	background-color: #b5d0ff;
+	background-color: var(--light-color);
 	border-top-left-radius: 0;
 	margin: 0 16px 10px 4px;
 	position: relative;
@@ -151,18 +154,22 @@ a {
 	left: -5px;
 	top: 0;
 	border-top: 0;
-	border-right: 8px solid #b5d0ff;
+	border-right: 8px solid #444;
 	border-left: none;
 	border-bottom: 8px solid transparent;
 }
 
 .chat-messages .message.reciever .text {
-	color: #000;
+	color: #fff;
 }
 
-.chat-messages .message.reciever .meta,
-.chat-messages .message.reciever .meta span {
-	color: #444;
+.chat-messages .message.notification .meta,
+.chat-messages .message.notification .meta span {
+	display: none;
+}
+
+.chat-messages .message.notification .text  {
+	color: #fff;
 }
 
 .chat-messages .message .meta {
